@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  position: sticky;
+  top: 0;
+  background-color: #222436;
+  z-index: 2; 
+}
+  
+.brand {
+  margin-top: 7px;
+}
+
+.brand h2{
+  font-weight: bold;
+}
+
+.brand span {
+  color: #ff0062;
+}
+
+.menu {
+  margin-top: 15px;
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.menu  li {
+  list-style: none;
+
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px; 
+}
+
+.menu a:hover{
+  background-color: #ff006291;
+  color: #191c32;
+}
+
+.menu .active {
+  color:  #ff0062;
+  
+}
+
+.menu a:hover {
+  color: #fff;
+}

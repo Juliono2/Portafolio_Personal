@@ -1,0 +1,55 @@
+.about {
+    background-color: azure;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    width: 100vw;
+    align-items: center;
+}
+  
+.about img {
+    /*border:  1px solid #00d9ffd7;*/
+    height: 100%;
+    width: 100%;
+    grid-column:  6/11;
+    color: black;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+  
+.about-info {
+    grid-column: 1/6;
+    padding: 3em;
+}
+  
+.about-info h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #9340FF;
+}
+  
+.divider {
+    height: 4px;
+    width: 60px;
+    background-color: #9340FF;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+  
+.about p {
+    margin-bottom: 1em;
+    text-align: justify;
+    color: black;
+}
+
+.about .download-cv {
+    background-image: linear-gradient(to right,#9340FF,#0CC0DF);
+    background-size: 100% 300%;
+    color: black
+}
+  
+.download-cv:hover {
+    background-image: linear-gradient(to right,#000000,#0CC0DF);
+    background-size: 300% 100%;
+    color: white
+}
