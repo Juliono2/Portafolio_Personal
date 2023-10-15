@@ -5,8 +5,8 @@ import NavBar from './components/NavBar/NavBar';
 import Banner from './components/Banner/Banner';
 import AboutMe from './components/AboutMe/AboutMe';
 import Portafolio from './components/Portafolio/Portafolio';
-import Skills from './components/Skills/Skills';
-
+import HabilitiesHome from './components/HabilitiesHome/HabilitiesHome'
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
       <Banner />
       <AboutMe />
       <Portafolio />
-      <Skills />
+      <HabilitiesHome />
+      <Contact />
     </div>
   );
 }

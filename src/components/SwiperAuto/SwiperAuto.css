@@ -1,0 +1,32 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiperAuto { 
+    height: 48px;
+    width: 100%;
+}
+  
+.swiper-slide-auto {
+    text-align: center;
+    font-size: 18px;
+    background: azure;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide-auto:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+
+.swiper-slide-auto img {
+    display: block;
+    width: 48px;
+    object-fit: cover;
+}
+  

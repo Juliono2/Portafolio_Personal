@@ -1,4 +1,5 @@
 import React from "react";
+import SwiperAuto from "../SwiperAuto/SwiperAuto";
 import './Skills.css';
 
 import javascriptIcon from '../../assets/icon/icons8-javascript.svg';
@@ -26,49 +27,27 @@ import vscodeIcon from '../../assets/icon/icons8-visual-studio-code-2019.svg';
 import oracleIcon from '../../assets/icon/icons8-logo-de-oracle.svg'
 
 function Skills(){
+  const LenguagesImages = [javascriptIcon, pythonIcon, cplusplusIcon, javaIcon, htmlIcon, cssIcon]
+  const FrameworksImages = [reactIcon, flaskIcon, angularIcon, djangoIcon, materialUiIcon]
+  const TechnologiesImages = [gitIcon, githubIcon, npmIcon, nodejsIcon, vscodeIcon, enterpriseIcon, accessIcon]
+  const DatabaseImages = [mysqlIcon, postgresqlIcon, oracleIcon, plsqlIcon]
+  
     return(
         <div class="skills">
           <h2 class="skills__subtitle">Algunas de mis habilidades</h2>
           <div class="divider"></div>
           <div class="skills__data">
-            <h3 class="skills-title">Languages</h3>
-            <div class="skills__names">
-              <a href="#" class="skills__name"><img src={javascriptIcon} alt="js" /></a>
-              <a href="#" class="skills__name"><img src={pythonIcon} alt="python" /></a>
-              <a href="#" class="skills__name"><img src={cplusplusIcon} alt="c++" /></a>
-              <a href="#" class="skills__name"><img src={javaIcon}alt="java" /></a>
-              <a href="#" class="skills__name"><img src={htmlIcon} alt="html" /></a>
-              <a href="#" class="skills__name"><img src={cssIcon} alt="css" /></a>
-            </div>
+            <h3 class="skills-title">Languajes</h3>
+            <SwiperAuto images={LenguagesImages} />
 
             <h3 class="skills-title">Frameworks & Librerias</h3>
-            <div class="skills__names">
-              <a href="#" class="skills__name"><img src={reactIcon} alt="react" /></a>
-              <a href="#" class="skills__name"><img src={flaskIcon} alt="flask" /></a>
-              <a href="#" class="skills__name"><img src={angularIcon} alt="angular" /></a>
-              <a href="#" class="skills__name"><img src={djangoIcon} alt="django" /></a>
-              <a href="#" class="skills__name"><img src={materialUiIcon} alt="materialUI" /></a>
-              <a href="#" class="skills__name"><img src={bootstrapIcon} alt="bootstrap" /></a>
-            </div>
+            <SwiperAuto images={FrameworksImages} />
 
             <h3 class="skills-title">Tecnologias y Herramientas</h3>
-            <div class="skills__names tools">
-              <a href="#" class="skills__name"><img src={gitIcon} alt="git" /></a>
-              <a href="#" class="skills__name"><img src={githubIcon} alt="github" /></a>
-              <a href="#" class="skills__name"><img src={npmIcon} alt="npm" /></a>
-              <a href="#" class="skills__name"><img src={nodejsIcon} alt="node" /></a>
-              <a href="#" class="skills__name"><img src={vscodeIcon} alt="visual" /></a>
-              <a href="#" class="skills__name enterprise"><img src={enterpriseIcon} alt="enterprise" /></a>
-              <a href="#" class="skills__name"><img src={accessIcon} alt="access" /></a>
-            </div>
+            <SwiperAuto images={TechnologiesImages} />
 
             <h3 class="skills-title">Sistemas gestores de bases de datos</h3>
-            <div class="skills__names database">
-              <a href="#" class="skills__name"><img src={mysqlIcon} alt="Mysql" /></a>
-              <a href="#" class="skills__name"><img src={postgresqlIcon} alt="Postgresql" /></a>
-              <a href="#" class="skills__name"><img src={oracleIcon} alt="Oracle" /></a>
-              <a href="#" class="skills__name plsql"><img src={plsqlIcon} alt="PLSql" /></a>
-            </div>
+            <SwiperAuto images={DatabaseImages} />
           </div>
         </div>     
     )
