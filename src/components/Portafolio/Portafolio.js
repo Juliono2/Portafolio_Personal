@@ -4,7 +4,7 @@ import './Portafolio.css';
 import SwiperSlider from '../SwiperSlider/SwiperSlider';
 
 function Portafolio() {
-    return (
+  return (
     <div class="portfolio">
       <div class="portfolio-heading">
         <h2>Mi Portafolio</h2>
@@ -13,8 +13,8 @@ function Portafolio() {
       <div class="container">
         <SwiperSlider />
       </div>
-    </div>)
-    
+    </div>
+  )
 }
 
 export default Portafolio;

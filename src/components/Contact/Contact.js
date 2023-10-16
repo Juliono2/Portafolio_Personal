@@ -1,6 +1,7 @@
 import React from 'react';
-import './Contact.css'
-import UnWapo from '../../assets/UnWapo.png'
+import './Contact.css';
+import UnWapo from '../../assets/UnWapo.png';
+import FondoDegradao2 from '../../assets/FondoDegradao2.png';
 
 function Contact() {
   return (
@@ -10,8 +11,13 @@ function Contact() {
         <div className="divider"></div>
       </div>
       <div className="container-contact">
-        <div className='contact-image'>
-          <img src={UnWapo} alt="Un wapo" />
+        <div className="container-images">
+          <div className='contact-image'>
+            <img src={UnWapo} alt="Un wapo" />
+          </div>
+          <div className="background-image">
+            <img src={FondoDegradao2} alt="FondoDegradao2" />
+          </div>
         </div>
         <div className="contact-form">
           <h4>
@@ -22,7 +28,7 @@ function Contact() {
           <form className="form-group">
             <input type="text" placeholder="Nombre" className="input" />
             <input type="email" placeholder="Correo" className="input" />
-            <textarea name="message" placeholder="Por favor deja tu mensaje aqui"></textarea>
+            <textarea name="message" placeholder="Por favor deja tu mensaje aquí"></textarea>
             <button type="submit" className="btn-submit">Enviar Mensaje</button>
           </form>
         </div>

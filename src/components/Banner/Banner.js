@@ -1,5 +1,6 @@
 import {Container, Row, Col} from "react-bootstrap";
 import UnWapo from '../../assets/UnWapo.png'
+import FondoDegradao from '../../assets/FondoDegradao.png'
 import './Banner.css'
 
 function Banner(){
@@ -13,7 +14,14 @@ function Banner(){
                 </p>
                 <a download href="#"><button class="download-cv">Descargar CV</button></a>
             </div>
-            <img src={UnWapo} alt="Foto mia asi too wapo" />
+            <div className="container-images">
+                <div className='banner-image'>
+                    <img src={UnWapo} alt="Foto mia asi too wapo" />
+                </div>
+                <div className="background-image">
+                    <img src={FondoDegradao} alt="Fondo degradado" />
+                </div>
+            </div>
         </main>
     )
 }

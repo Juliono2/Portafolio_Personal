@@ -10,14 +10,39 @@
     justify-content: space-between;
 }
 
+.container-images {
+    width: 100%;
+    position: relative; 
+}
+
+.background-image {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}
+
 .contact-heading {
     text-align: right;
+    color: #9340FF;
+}
+
+.contact-heading h2 {
+    font-weight: bold;
 }
 
 .contact-heading .divider{
     height: 4px;
     width: 35%;
-    background-color: #0CC0DF;
+    background-color: #9340FF;
     margin-left: auto; 
 }
 
@@ -26,18 +51,28 @@
     text-align: right;
 }
 
+.contact-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 .contact-image img {
-    max-width: 100%; 
-    opacity: 0.3; 
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    opacity: 0.3;
 }
 
 .contact-image, .contact-form {
-    width: 45%;
+    width: 100%;
 }
 
 .contact-form h4 {
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.3em;
 }
 
 @media (max-width: 768px) {
@@ -76,6 +111,17 @@
     border-radius: 20px;
     border: none;
     text-transform: uppercase;
-    background-color: aqua;
+    color: white; 
+    background-image: linear-gradient(to right, #260E69, #9340FF); /* Cambiamos el degradado de derecha a izquierda */
+    background-size: 300% 100%; 
+    -webkit-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+    -moz-box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+    box-shadow: 1px 3px 11px -5px rgba(102,231,200,0.69);
+    transition: background-position 0.5s;
+}
+
+.form-group .btn-submit:hover {
+    background-size: 100% 100%;
+    color: black;
 }
   
