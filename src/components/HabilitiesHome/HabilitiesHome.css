@@ -1,10 +1,19 @@
 .habilities-home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    /*grid-template-columns: 1fr 1fr;*/
     height: 100vh;
     overflow: hidden;
 }
 
 .half {
     overflow: auto;
+    width: 50%;
 }
+
+.vertical-divider {
+    width: 4px;
+    height: 100%; 
+    background-color: #0CC0DF;
+    margin: 0;
+}
+

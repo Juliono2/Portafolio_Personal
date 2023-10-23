@@ -10,6 +10,7 @@ function HabilitiesHome() {
             <div className="half">
                 <Skills />
             </div>
+            <div className="vertical-divider"></div>
             <div className="half">
                 <Certifications />
             </div>
